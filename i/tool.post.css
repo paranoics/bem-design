@@ -1,0 +1,70 @@
+.tool {
+  background: rgba(0,0,0,0.2);
+  height: 252px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  transition-duration: 0.3s;
+  text-decoration: none;
+  &:hover {
+    background: rgba(0,0,0,0.6);
+  }
+  &__icon {
+    height: 100px;
+    width: 100px;
+    margin-bottom: $space-s;
+    display: inline-block;
+    &_view {
+      &_const {
+        background-image: url('const.svg');
+        background-size: 80px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+      &_typo {
+        background-image: url('typo.svg');
+        background-size: 80px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+      &_layouts {
+        background-image: url('layouts.svg');
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+      &_blocks {
+        background-image: url('blocks.svg');
+        background-size: 100px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+      &_icons {
+        background-image: url('icons.svg');
+        background-size: 94px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+      &_logotypes {
+        background-image: url('logotypes.svg');
+        background-size: 76px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+      &_vectors {
+        background-image: url('vectors.svg');
+        background-size: 78px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+      &_service {
+        background-image: url('service.svg');
+        background-size: 78px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+      }
+    }
+  }
+}

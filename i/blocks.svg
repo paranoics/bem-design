@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="72" viewBox="0 0 100 72">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="67" height="40" x="33" fill="#FFFFFF" fill-rule="nonzero"/>
+    <rect width="28" height="56" fill="#333333" fill-rule="nonzero"/>
+    <g fill="#616161" fill-rule="nonzero" transform="translate(6 6)">
+      <rect width="16" height="4"/>
+      <rect width="16" height="4" y="8"/>
+      <rect width="16" height="4" y="16"/>
+      <rect width="16" height="4" y="24"/>
+      <rect width="16" height="4" y="32"/>
+      <rect width="16" height="4" y="40"/>
+    </g>
+    <g transform="translate(39 6)">
+      <rect width="55" height="6" fill="#E5E5E5" fill-rule="nonzero"/>
+      <rect width="54" height="5" x=".5" y=".5" fill="#FF0000" stroke="#FF0000"/>
+    </g>
+    <rect width="55" height="6" x="39" y="17" fill="#E5E5E5" fill-rule="nonzero"/>
+    <rect width="34" height="6" x="60" y="28" fill="#FFDE00" fill-rule="nonzero" rx="1"/>
+    <rect width="67" height="27" x="33" y="45" fill="#333333" fill-rule="nonzero"/>
+    <rect width="16" height="15" x="39" y="51" fill="#616161" fill-rule="nonzero"/>
+    <rect width="34" height="15" x="60" y="51" fill="#616161" fill-rule="nonzero"/>
+  </g>
+</svg>

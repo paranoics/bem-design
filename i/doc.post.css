@@ -1,0 +1,74 @@
+.doc {
+  background: $color-default;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  &:hover {
+    .doc__action {
+      background: $color-brand;
+    }
+  }
+  &_status {
+    &_process {
+      opacity: .8;
+    }
+  }
+  &__author {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-bottom: $space-m;
+    background-size: cover;
+    &_view {
+      &_andrey {
+        background-image: url('andrey.png');
+      }
+      &_misha {
+        background-image: url('misha.png');
+      }
+      &_julya {
+        background-image: url('julya.png');
+      }
+      &_kirill {
+        background-image: url('kirill.png');
+      }
+    }
+  }
+  &__content {
+    padding: $space-l;
+  }
+  &__action {
+    padding: $space-m;
+    background: rgba(0,0,0,0.06);
+    transition-duration: 0.3s;
+  }
+  &__image {
+    height: 120px;
+    background: rgba(0,0,0,0.1);
+    margin-bottom: $space-l;
+    background-size: cover;
+    &_view {
+      &_brickbox {
+        background-image: url('brickbox.png');
+      }
+      &_grids {
+        background-image: url('grids.png');
+      }
+      &_pattern {
+        background-image: url('pattern.png');
+      }
+      &_const {
+        background-image: url('const.png');
+      }
+      &_graphics {
+        background-image: url('graphics.png');
+      }
+      &_bemxjst {
+        background-image: url('bemxjst.png');
+      }
+    }
+  }
+  &__info {
+    height: 120px;
+  }
+}
