@@ -1,4 +1,6 @@
 node_modules/
+!node_modules/bem-icons/
+
 .DS_Store
 .idea/
 *.iml
@@ -9,9 +11,4 @@ npm-debug.log
 # bem
 .bem/cache/
 .enb/tmp/
-*bundles*/*/*.*
-!*bundles*/*/*.bemjson.js
-!*bundles*/.bem/*
-*pages*/*/*.*
-!*pages*/*/*.bemjson.js
-!*pages*/.bem/*
+
