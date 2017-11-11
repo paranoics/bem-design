@@ -2521,7 +2521,7 @@ block('demo').elem('menu')(
                               mods: { view: 'inverse', size: 'l' },
                               tag: 'a',
                               attrs: {
-                                'href': 'https://bemdesign.github.io/bem-design/desktop.bundles/patterns/patterns.html'
+                                'href': 'https://bemdesign.github.io/bem-design/patterns/patterns.html'
                               },
                               mix: { block: 'demo', elem: 'menu-item-link' },
                               content: 'Паттерны'
@@ -2557,7 +2557,7 @@ block('demo').elem('menu')(
                               mods: { view: 'inverse', size: 'l' },
                               tag: 'a',
                               attrs: {
-                                'href': 'https://bemdesign.github.io/bem-design/desktop.bundles/layouts/layouts.html'
+                                'href': 'https://bemdesign.github.io/bem-design/layouts/layouts.html'
                               },
                               mix: { block: 'demo', elem: 'menu-item-link' },
                               content: 'Сетки'
@@ -2629,7 +2629,7 @@ block('demo').elem('menu')(
                               mods: { view: 'inverse', size: 'l' },
                               tag: 'a',
                               attrs: {
-                                'href': 'https://bemdesign.github.io/bem-design/desktop.bundles/illustrations/illustrations.html'
+                                'href': 'https://bemdesign.github.io/bem-design/desktop.bundles/illustations/illustations.html'
                               },
                               mix: { block: 'demo', elem: 'menu-item-link' },
                               content: 'Иллюстрации'
@@ -2978,6 +2978,118 @@ block('demo').elem('menu')(
 /* begin: /Users/meeq/github/bem-design/common.blocks/demo/__content/demo__content.bemhtml.js */
 
 /* end: /Users/meeq/github/bem-design/common.blocks/demo/__content/demo__content.bemhtml.js */
+/* begin: /Users/meeq/github/bem-design/node_modules/bem-components/common.blocks/icon/icon.bemhtml.js */
+block('icon')(
+    tag()('span'),
+    addAttrs()(function() {
+        var attrs = {},
+            url = this.ctx.url;
+        if(url) attrs.style = 'background-image:url(' + url + ')';
+        return attrs;
+    })
+);
+
+/* end: /Users/meeq/github/bem-design/node_modules/bem-components/common.blocks/icon/icon.bemhtml.js */
+/* begin: /Users/meeq/github/bem-design/node_modules/bem-components/common.blocks/button/button.bemhtml.js */
+block('button')(
+    def()(function() {
+        var tag = apply('tag'),
+            isRealButton = (tag === 'button') && (!this.mods.type || this.mods.type === 'submit');
+
+        return applyNext({ _isRealButton : isRealButton });
+    }),
+
+    tag()(function() {
+        return this.ctx.tag || 'button';
+    }),
+
+    addJs()(true),
+
+    // NOTE: mix below is to satisfy interface of `control`
+    addMix()({ elem : 'control' }),
+
+    addAttrs()(
+        // Common attributes
+        function() {
+            var ctx = this.ctx,
+                a = applyNext(),
+                attrs = {
+                    role : (a && a.role) || 'button',
+                    tabindex : ctx.tabIndex,
+                    id : ctx.id,
+                    title : ctx.title
+                };
+
+            this.mods.disabled &&
+                !this._isRealButton && (attrs['aria-disabled'] = 'true');
+
+            return attrs;
+        },
+
+        // Attributes for button variant
+        match(function() { return this._isRealButton; })(function() {
+            var ctx = this.ctx,
+                attrs = {
+                    type : this.mods.type || 'button',
+                    name : ctx.name,
+                    value : ctx.val
+                };
+
+            this.mods.disabled && (attrs.disabled = 'disabled');
+
+            return attrs;
+        })
+    ),
+
+    content()(
+        function() {
+            var ctx = this.ctx,
+                content = [ctx.icon];
+            // NOTE: wasn't moved to separate template for optimization
+            /* jshint eqnull: true */
+            ctx.text != null && content.push({ elem : 'text', content : ctx.text });
+            return content;
+        },
+        match(function() { return typeof this.ctx.content !== 'undefined'; })(function() {
+            return this.ctx.content;
+        })
+    )
+);
+
+/* end: /Users/meeq/github/bem-design/node_modules/bem-components/common.blocks/button/button.bemhtml.js */
+/* begin: /Users/meeq/github/bem-design/node_modules/bem-components/common.blocks/button/_focused/button_focused.bemhtml.js */
+block('button').mod('focused', true).js()(function() {
+    return this.extend(applyNext(), { lazyInit : false });
+});
+
+/* end: /Users/meeq/github/bem-design/node_modules/bem-components/common.blocks/button/_focused/button_focused.bemhtml.js */
+/* begin: /Users/meeq/github/bem-design/node_modules/bem-components/common.blocks/button/__text/button__text.bemhtml.js */
+block('button').elem('text').tag()('span');
+
+/* end: /Users/meeq/github/bem-design/node_modules/bem-components/common.blocks/button/__text/button__text.bemhtml.js */
+/* begin: /Users/meeq/github/bem-design/node_modules/bem-components/common.blocks/button/_type/button_type_link.bemhtml.js */
+block('button').mod('type', 'link')(
+    tag()('a'),
+
+    addAttrs()(function() {
+        var ctx = this.ctx,
+            attrs = { role : 'link' };
+
+        ctx.target && (attrs.target = ctx.target);
+        this.mods.disabled?
+            attrs['aria-disabled'] = 'true' :
+            attrs.href = ctx.url;
+
+        return attrs;
+    }),
+
+    mod('disabled', true)
+        .js()(function() {
+            return this.extend(applyNext(), { url : this.ctx.url });
+        })
+);
+
+/* end: /Users/meeq/github/bem-design/node_modules/bem-components/common.blocks/button/_type/button_type_link.bemhtml.js */
 oninit(function(exports, context) {
     var BEMContext = exports.BEMContext || context.BEMContext;
     // Provides third-party libraries from different modular systems

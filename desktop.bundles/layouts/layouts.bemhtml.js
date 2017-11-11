@@ -2521,7 +2521,7 @@ block('demo').elem('menu')(
                               mods: { view: 'inverse', size: 'l' },
                               tag: 'a',
                               attrs: {
-                                'href': 'https://bemdesign.github.io/bem-design/desktop.bundles/patterns/patterns.html'
+                                'href': 'https://bemdesign.github.io/bem-design/patterns/patterns.html'
                               },
                               mix: { block: 'demo', elem: 'menu-item-link' },
                               content: 'Паттерны'
@@ -2557,7 +2557,7 @@ block('demo').elem('menu')(
                               mods: { view: 'inverse', size: 'l' },
                               tag: 'a',
                               attrs: {
-                                'href': 'https://bemdesign.github.io/bem-design/desktop.bundles/layouts/layouts.html'
+                                'href': 'https://bemdesign.github.io/bem-design/layouts/layouts.html'
                               },
                               mix: { block: 'demo', elem: 'menu-item-link' },
                               content: 'Сетки'
@@ -2629,7 +2629,7 @@ block('demo').elem('menu')(
                               mods: { view: 'inverse', size: 'l' },
                               tag: 'a',
                               attrs: {
-                                'href': 'https://bemdesign.github.io/bem-design/desktop.bundles/illustrations/illustrations.html'
+                                'href': 'https://bemdesign.github.io/bem-design/desktop.bundles/illustations/illustations.html'
                               },
                               mix: { block: 'demo', elem: 'menu-item-link' },
                               content: 'Иллюстрации'

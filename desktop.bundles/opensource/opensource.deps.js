@@ -251,6 +251,145 @@ exports.deps = [
         "val": "xxxxl"
     },
     {
+        "block": "row"
+    },
+    {
+        "block": "row",
+        "elem": "col"
+    },
+    {
+        "block": "row",
+        "elem": "col",
+        "mod": "sw"
+    },
+    {
+        "block": "opensource-item"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "xxxl"
+    },
+    {
+        "block": "opensource-item",
+        "elem": "header"
+    },
+    {
+        "block": "text",
+        "mod": "view",
+        "val": "link"
+    },
+    {
+        "block": "opensource-item",
+        "elem": "level-list"
+    },
+    {
+        "block": "opensource-item",
+        "elem": "level-item"
+    },
+    {
+        "block": "icon"
+    },
+    {
+        "block": "icon",
+        "mod": "allert-1"
+    },
+    {
+        "block": "icon",
+        "mod": "allert-1",
+        "val": "s-inverse"
+    },
+    {
+        "block": "opensource-item",
+        "elem": "content"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "m"
+    },
+    {
+        "block": "decorator",
+        "mod": "indent-b",
+        "val": "s"
+    },
+    {
+        "block": "opensource-item",
+        "elem": "action"
+    },
+    {
+        "block": "opensource-item",
+        "elem": "event"
+    },
+    {
+        "block": "button"
+    },
+    {
+        "block": "button",
+        "mod": "focused"
+    },
+    {
+        "block": "button",
+        "mod": "hovered"
+    },
+    {
+        "block": "button",
+        "mod": "disabled"
+    },
+    {
+        "block": "button",
+        "mod": "pressed"
+    },
+    {
+        "block": "button",
+        "elem": "text"
+    },
+    {
+        "block": "button",
+        "mod": "theme"
+    },
+    {
+        "block": "button",
+        "mod": "theme",
+        "val": "islands"
+    },
+    {
+        "block": "button",
+        "mod": "size"
+    },
+    {
+        "block": "button",
+        "mod": "size",
+        "val": "l"
+    },
+    {
+        "block": "button",
+        "mod": "view"
+    },
+    {
+        "block": "button",
+        "mod": "view",
+        "val": "action"
+    },
+    {
+        "block": "button",
+        "mod": "type"
+    },
+    {
+        "block": "button",
+        "mod": "type",
+        "val": "link"
+    },
+    {
+        "block": "button",
+        "mod": "view",
+        "val": "normal"
+    },
+    {
+        "block": "demo",
+        "elem": "footer"
+    },
+    {
         "block": "loader",
         "mod": "type",
         "val": "js"
@@ -288,5 +427,31 @@ exports.deps = [
         "block": "text",
         "mod": "size",
         "val": "m"
+    },
+    {
+        "block": "row",
+        "elem": "col",
+        "mod": "sw",
+        "val": 6
+    },
+    {
+        "block": "button",
+        "mod": "focused",
+        "val": true
+    },
+    {
+        "block": "button",
+        "mod": "hovered",
+        "val": true
+    },
+    {
+        "block": "button",
+        "mod": "disabled",
+        "val": true
+    },
+    {
+        "block": "button",
+        "mod": "pressed",
+        "val": true
     }
 ];
