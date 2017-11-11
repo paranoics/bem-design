@@ -1,0 +1,453 @@
+.page_vertical-align_center {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+  .page_type_full-screen {
+  		min-height: 100vh !important;
+  	}
+html {
+    min-height: 100%;
+}
+.page_theme_islands {
+    font: 13px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+    min-height: 100%;
+    margin: 0;
+
+    color: #000;
+    background: #fff;
+}
+/* Базовые цвета от которых выстраивается вся политра */
+/* hsl(0, 0%, 0%) */
+/* hsl(0, 0%, 100%) */
+/* hsl(48, 100%, 50%) */
+/* hsl(40, 14%, 96%) */
+/* hsl(0, 100%, 47%) */
+/* hsl(120, 100%, 23%) */
+/* hsl(220, 100%, 47%) */
+/* Цвета блоков */
+/* Бренд */
+/* Акценты */
+/* Выделения */
+/* Наведения */
+/* Инверсия */
+/* Границы */
+/* Границы */
+/* Границы */
+/* Затенения */
+/* Дефолт */
+/* Дефолт iOS */
+/* Дефолт Android */
+/* Паранджа  */
+/* Успех */
+/* Ошибка */
+/* Стандартный */
+/* Цвета компонентов */
+/* Дизайбл */
+/* Цвета текста */
+/* Основной */
+/* Промо */
+/* Второстепенный */
+/* Третестепенный */
+/* Инверсия */
+/* Неактивный */
+/* Приход */
+/* Брендированный */
+/* Успех */
+/* Ошибка */
+/* Цвета ссылок */
+/* Основная */
+/* Дополнительная */
+/* Второстепенная ссылка */
+/* Ховер */
+:root {
+  /* Цвета блоков */
+  --color-brand: #FFCC00;
+  --color-action: rgb(255, 219, 77);
+  --color-selection: rgb(255, 234, 158);
+  --color-hover: rgb(255, 246, 204);
+  --color-inverse: #1a1a1a;
+  --color-border: rgba(0, 0, 0, 0.05);
+  --color-stripe: rgba(0, 0, 0, 0.02);
+  --color-border-control: rgba(0, 0, 0, 0.12);
+  --color-ghost: rgb(243, 241, 237);
+  --color-default: #FFFFFF;
+  --color-default-ios: #FFFFFF;
+  --color-default-android: rgb(250, 250, 250);
+  --color-tone: rgba(0, 0, 0, 0.7);
+  --color-success: rgb(0, 153, 97);
+  --color-alert: rgb(255, 51, 51);
+  --color-normal: rgb(220, 226, 228);
+
+  /* Цвета контролов */
+  --color-disable: rgba(0, 0, 0, 0.08);
+
+  /* Цвета текста */
+  --color-typo-primary: #000000;
+  --color-typo-promo: rgba(0, 0, 0, 0.8);
+  --color-typo-secondary: rgba(0, 0, 0, 0.6);
+  --color-typo-ghost: rgba(0, 0, 0, 0.3);
+  --color-typo-inverse: #FFFFFF;
+  --color-typo-disable: rgba(0, 0, 0, 0.3);
+  --color-typo-income: rgb(4, 164, 4);
+  --color-typo-letter: rgb(255, 0, 0);
+  --color-typo-success: rgb(0, 153, 97);
+  --color-typo-alert: rgb(255, 51, 51);
+
+  /* Цвета ссылок */
+  --color-link: #0070F0;
+  --color-link-external: #007700;
+  --color-link-minor: rgb(133, 137, 173);
+  --color-link-hover: rgb(204, 0, 0);
+}
+/* Цвета для bem-components (в процессе)
+$color-default:                 color($color-essential);
+$color-inverse:                 $color-base;
+$color-hover:                   color($color-project l(+33%));
+$color-press:                   $color-ghost;
+
+$color-action:                  color($color-project l(+15%));
+$color-action-hover:            color($color-project l(+20%));
+$color-action-focus:            $color-project;
+$color-action-press:            $color-project;
+
+$color-check:                   color($color-project l(+33%));
+$color-check-press:             color($color-project l(+25%));
+
+$color-disable:                 color($color-base a(8%));
+$color-disable-check:           color($color-base a(8%));
+$color-border-disable:          color($color-base l(+60%));
+
+$color-border:                  color($color-base a(20%));
+$color-border-hover:            color($color-base a(30%));
+$color-border-press:            color($color-base a(35%));
+$color-border-focus:            color($color-base a(35%));
+
+$color-border-check:            color($color-project a(50%) l(-20%));
+$color-border-check-press:      color($color-base a(35%));
+$color-border-check-hover:      color($color-project a(60%) l(-25%));
+$color-border-focus:            $color-project;
+
+$color-typo-primary:            $color-base;
+$color-typo-inverse:            $color-essential;
+$color-typo-placeholder:        color($color-base l(+60%));
+
+$color-link:                    $color-path;
+$color-link-hover:              $color-radical;
+$color-link-ghost:              $color-ghost;
+$color-link-ghost-hover:        color($color-ghost l(-10));
+$color-link-visited:            color($color-path s(10%));
+
+$color-typo-disable:            color($color-base l(+60%));
+$color-typo-inverse-disable:    color($color-base a(40%));
+*/
+/* Отступы */
+:root{
+  /* Отступы */
+  --space-xxxs: 2px;
+  --space-xxs: 4px;
+  --space-xs: 8px;
+  --space-s: 12px;
+  --space-m: 16px;
+  --space-l: 20px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+  --space-xxxl: 40px;
+  --space-xxxxl: 48px;
+  --space-xxxxxl: 72px;
+  --space-xxxxxxl: 96px;
+}
+/* Размеры текста */
+/* Межстрочный интервал */
+:root {
+  /* Размер текста */
+  --size-typo-xs: 11px;
+  --size-typo-s: 13px;
+  --size-typo-m: 15px;
+  --size-typo-l: 18px;
+  --size-typo-xl: 20px;
+  --size-typo-xxl: 24px;
+  --size-typo-xxxl: 32px;
+  --size-typo-xxxxl: 48px;
+  --size-typo-xxxxxl: 72px;
+  --size-typo-xxxxxxl: 96px;
+
+  /* Межстрочный интервал */
+  --line-height-typo-xs: 15px;
+  --line-height-typo-s: 18px;
+  --line-height-typo-m: 21px;
+  --line-height-typo-l: 25px;
+  --line-height-typo-xl: 28px;
+  --line-height-typo-xxl: 34px;
+  --line-height-typo-xxxl: 42px;
+  --line-height-typo-xxxxl: 62px;
+  --line-height-typo-xxxxxl: 82px;
+  --line-height-typo-xxxxxxl: 115px;
+}
+.demo {
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+.demo__header {
+		position: fixed;
+		top: 24px;
+		right: 24px;
+		width: 20px;
+		height: 20px;
+		z-index: 9999;
+		cursor: pointer;
+	}
+.demo__menu-icon {
+		position: absolute;
+		top: 2px;
+		right: 0px;
+		width: 20px;
+		height: 3px;
+		-webkit-transform-origin: 2px 4px;
+		        transform-origin: 2px 4px;
+		-webkit-transition: .3s ease;
+		transition: .3s ease;
+	}
+.demo__menu-icon:before {
+			content: '';
+			height: 3px;
+			width: 100%;
+			position: absolute;
+			top: 6px;
+			-webkit-transition: .3s ease;
+			transition: .3s ease;
+		}
+.demo__menu-icon:after {
+			content: '';
+			height: 3px;
+			width: 100%;
+			position: absolute;
+			top: 12px;
+			-webkit-transition: .3s ease;
+			transition: .3s ease;
+		}
+.demo__menu-icon_state_open {
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);
+			background: var(--color-inverse);
+		}
+.demo__menu-icon_state_open:before {
+				background: var(--color-inverse);
+			}
+.demo__menu-icon_state_open:after {
+				-webkit-transform: rotate(0deg) translate(0px);
+				        transform: rotate(0deg) translate(0px);
+				background: var(--color-inverse);
+			}
+.demo__menu-icon_state_close {
+			-webkit-transform: rotate(45deg);
+			        transform: rotate(45deg);
+			background: var(--color-default);
+		}
+.demo__menu-icon_state_close:before {
+				background: transparent;
+			}
+.demo__menu-icon_state_close:after {
+				-webkit-transform: rotate(-90deg) translate(12px);
+				        transform: rotate(-90deg) translate(12px); 
+				background: var(--color-default);
+			}
+.link {
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+}
+.link_disabled {
+        pointer-events: none;
+    }
+.demo__menu {
+		opacity: 0;
+		pointer-events: none;
+		-webkit-transition: .3s ease;
+		transition: .3s ease;
+		background-color: var(--color-inverse);
+		position: fixed;
+		z-index: 999;
+		top: 0;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+.demo__menu_open {
+			opacity: 1;
+			-webkit-transition: .3s ease;
+			transition: .3s ease;
+			pointer-events: all;
+		}
+.demo__menu-content {
+		display: inline-block;
+		vertical-align: middle;
+		width: 99%;
+		z-index: 99999;
+		padding: 60px 0;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+.demo__menu-sections {
+		width: 1140px;
+		margin: 0 auto;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+.demo__menu-section {
+		margin-bottom: 30px;
+	}
+/* Подгон для вертикального ритма */
+.demo__menu-section:last-child {
+			margin-bottom: 0px;
+		}
+.demo__menu-item-row {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		margin-bottom: 2px;
+	}
+.demo__menu-item-row:nth-child(2n) {
+			opacity: 0.3;
+		}
+.demo__menu-item-row:last-child {
+			margin-bottom: 0px;
+		}
+.demo__menu-item-link {
+		text-decoration: none;
+	}
+.demo__menu-item-link:hover {
+			color: #FFDB4D;
+		}
+.demo__menu-sections-col {
+		width: 500px;
+	}
+.demo__menu-section-name {
+		letter-spacing: 1.5px;
+		margin-bottom: 20px;
+		font-size: 24px;
+		font-weight: 500;
+		text-transform: uppercase;
+		color: var(--color-typo-inverse);
+		cursor: pointer;
+		-webkit-transition: 0.3s;
+		transition: 0.3s;
+		font-weight: bold;
+	}
+.demo__menu-item {
+		margin-bottom: 16px;
+		text-decoration: none;
+		font-size: 18px;
+		line-height: 24px;
+		-webkit-transition: 0.2s;
+		transition: 0.2s;
+	}
+.demo__menu-item:last-child {
+			margin-bottom: 0px;
+		}
+.demo__menu-item .link {
+			font-weight: 500;
+			color: rgba(255, 255, 255, 1);
+		}
+.demo__menu-item .link:hover {
+			color: var(--color-action);
+		}
+.demo__menu-item.active .link, .demo__menu-item.active .link:hover {
+			cursor: default;
+			color: var(--color-link);
+		}
+.demo__menu-section__open .demo__menu-section-name, .demo__menu-section__open .demo__menu-section-name:hover {
+		cursor: default;
+		color: var(--color-typo-inverse);
+	}
+.demo__content {
+	margin: auto;
+	width: 1140px;
+	padding-top: 72px;
+	padding-bottom: 72px;
+}
+.demo__content_size_l {
+			width: 1140px;
+		}
+.demo__content_size_m {
+			width: 960px;
+		}
+.demo__content_size_s {
+			width: 740px;
+		}
+.demo__content_display_flex {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			    flex-wrap: wrap;
+			-webkit-box-pack: justify;
+			    -ms-flex-pack: justify;
+			        justify-content: space-between;
+		}
+.demo__face-text {
+	width: 760px;
+}
+.demo__github {
+	margin-bottom: 92px;
+	font-size: 24px;
+	font-weight: bold;
+	opacity: 0.3;
+	color: var(--color-typo-primary);
+	display: block;
+	text-decoration: none;
+	-webkit-transition-duration: 0.3s;
+	        transition-duration: 0.3s;
+}
+.demo__github:hover {
+		color: #0366d6;
+		opacity: 1;
+	}
+.demo__content {
+	font-size: 82px;
+	font-weight: bold;
+	color: var(--color-inverse);
+}
+.text_view_inverse {
+	color: var(--color-typo-inverse);
+}
+.text_size_m {
+	font-size: 15px;
+	font-family: "Yandex Sans Text Web", Helvetica, Arial, sans-serif;
+	line-height: 21px;
+}
